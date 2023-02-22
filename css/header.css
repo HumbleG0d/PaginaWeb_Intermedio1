@@ -88,6 +88,8 @@ body {
 .section__input {
   background-color: var(--input-color);
   border: solid 0.5 var(--input-color);
+  font-size: var(--step--2);
+  outline: 0;
 }
 .section__input::placeholder {
   color: var(--text-color1);
@@ -112,6 +114,16 @@ body {
 
 .setcion__div {
   display: none;
+}
+
+/**Efectos*/
+
+.section__buttom--efects :hover {
+  transform: translateY(-2px);
+}
+
+.section__input:focus {
+  border: 3px solid rgb(93, 93, 216);
 }
 
 @media screen and (min-width: 768px) {
@@ -161,6 +173,11 @@ body {
 
   .item__span {
     margin-left: 0.625rem;
+  }
+
+  /**Efectos*/
+  .section__a:hover {
+    transform: translateY(-2px);
   }
 }
 
@@ -229,6 +246,11 @@ body {
   .setcion__div .a__store {
     display: flex;
   }
+
+  /**Efectos*/
+  .ul__item_a:hover {
+    color: var(--text-color2);
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -273,5 +295,10 @@ body {
     width: 20vw;
     height: 7vh;
     padding-left: 2vw;
+  }
+
+  /**Efectos*/
+  .item__help:hover {
+    text-decoration: underline var(--text-color2);
   }
 }
