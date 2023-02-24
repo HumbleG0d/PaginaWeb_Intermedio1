@@ -1,0 +1,123 @@
+.main {
+  flex-grow: 1;
+}
+
+.page__main {
+  grid-area: page__main;
+}
+
+.main__section {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "main__div--1 "
+    "main__div--2 ";
+  background-color: yellow;
+  justify-content: center;
+  gap: 20px 0;
+  position: relative;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+}
+
+.main__div--1 {
+  grid-area: main__div--1;
+}
+
+.section__div-1 {
+  background-image: url(https://res.cloudinary.com/deox9ahvl/image/upload/f_auto/v1677011763/images/latam-mrq-hp-imc-cynthia-sara-portrait_bdiogk.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+  width: 87vw;
+  height: 65vh;
+  background-position: center bottom;
+}
+
+/**section__div-1*/
+
+.section__main--inf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__div--item {
+  margin-top: 0.675rem;
+  text-align: center;
+}
+
+.subttitle__inf {
+  font-size: var(--step--2);
+}
+
+.span__inf {
+  font-size: var(--step-1);
+  font-weight: 800;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.span__inf--1 {
+  font-size: 2.5vw;
+  padding: 0 15.5vw;
+  font-weight: 700;
+}
+
+.a__inf {
+  text-decoration: none;
+  padding: 1.5vh 15vw;
+}
+
+.page__main--a {
+  color: var(--bg-color);
+  background-color: var(--text-color2);
+}
+
+.p__inf {
+  font-size: var(--step--1);
+  color: var(--text-color1);
+}
+
+.main__div--2 {
+  grid-area: main__div--2;
+  background-color: red;
+}
+
+/**section__div-2*/
+
+.section__div-2 {
+  background-color: var(--div-color2);
+}
+
+/**section__div-3*/
+
+.section__div-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "figcaption__section img__section";
+  position: absolute;
+  right: 6.25rem;
+  top: 25rem;
+}
+
+.img__section {
+  grid-area: img__section;
+}
+
+.img__section__div-3 {
+  width: 30vw;
+  height: 15vh;
+}
+
+.figcaption {
+  display: none;
+}
+
+.figcaption__section {
+  grid-area: figcaption__section;
+  justify-self: start;
+  align-self: end;
+}

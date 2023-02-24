@@ -10,9 +10,11 @@
   --input-color: #ebebeb;
   --bg-search: #00838c;
   --div-color: #fde9db;
+  --div-color2: #fde9db;
   --step--2: clamp(1rem, calc(0.77rem + 0.63vw), 1.25rem);
   --step-0: clamp(1.35rem, calc(1rem + 0.72vw), 1.56rem);
   --step--1: clamp(0.83rem, calc(-4.17rem + 6.68vw), 1rem);
+  --step-1: clamp(2.07rem, calc(0.81rem + 2.9vw), 3.05rem); /**700px*/
 }
 
 body {
@@ -21,16 +23,20 @@ body {
 }
 
 .body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 .page {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 100%;
+  grid-template-rows: min-content repeat(5, auto);
   grid-template-areas:
-    "page__header page__header page__header page__header page__header"
-    "page__section page__section page__section page__section page__section";
+    "page__header"
+    "page__section"
+    "page__main"
+    "page__footer";
 }
 
 .header {
@@ -76,6 +82,7 @@ body {
 .page__section {
   grid-area: page__section;
   width: 100vw;
+  margin-bottom: 0.875rem;
 }
 
 .input {
@@ -126,6 +133,21 @@ body {
   border: 3px solid rgb(93, 93, 216);
 }
 
+/**main*/
+
+/**footer*/
+
+.page__footer {
+  grid-area: page__footer;
+}
+
+.footer {
+  background-color: thistle;
+  font-size: 2em;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
 @media screen and (min-width: 768px) {
   /**>768px*/
   .header__div {
