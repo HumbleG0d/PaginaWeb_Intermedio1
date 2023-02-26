@@ -12,7 +12,6 @@
   grid-template-areas:
     "main__div--1 "
     "main__div--2 ";
-  background-color: yellow;
   justify-content: space-evenly;
   gap: 20px 0;
   position: relative;
@@ -43,6 +42,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1.5625rem 1.25rem;
 }
 
 .section__div--item {
@@ -89,7 +89,6 @@
 
 .main__div--2 {
   grid-area: main__div--2;
-  background-color: red;
 }
 
 /**section__div-2*/
@@ -105,8 +104,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "figcaption__section img__section";
   position: absolute;
-  left: 3.4375rem;
-  top: 23rem;
+  left: 4.4375rem;
+  top: 19rem;
 }
 
 .img__section {
@@ -116,7 +115,7 @@
 .img__section__div-3 {
   width: 44vw;
   max-width: 70%;
-  height: 20vh;
+  height: auto;
   border-radius: 5px;
   box-shadow: -10px 24px 30px rgb(0 0 0 / 14%);
 }
@@ -190,5 +189,112 @@
   .section__main--inf-2 .span__inf--1 {
     font-size: var(--step-2);
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .section__div-1 {
+    background-image: url(https://res.cloudinary.com/deox9ahvl/image/upload/v1677011737/images/es-mrq-hp-60-40-landscape_ianquh.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    width: 97vw;
+    height: 40vw;
+    max-height: 50vw;
+    background-position: center bottom;
+  }
+
+  .section__div-1 {
+    display: grid;
+    grid-template-columns: minmax(auto, 45%) auto;
+    grid-template-areas: "section__main--inf-1 section__div-3";
+  }
+
+  .section__main--inf-1 {
+    grid-area: section__main--inf-1;
+    align-self: center;
+  }
+
+  .section__div-3 {
+    grid-area: section__div-3;
+  }
+
+  .section__div-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.625rem auto 2.625rem;
+    grid-template-areas:
+      "figcaption__section"
+      "img__section"
+      ".";
+    /* position: absolute;
+    left: 3.4375rem;
+    top: 23rem; */
+    top: 3.125rem;
+    left: 43.75rem;
+    gap: 0.9375rem 0;
+  }
+
+  .figcaption__section {
+    grid-area: figcaption__section;
+    justify-self: center;
+  }
+  .img__section {
+    grid-area: img__section;
+    justify-self: center;
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main__section {
+    grid-template-columns: auto 28%;
+    grid-template-areas: "main__div--1 main__div--2";
+    gap: 0 20px;
+  }
+
+  .main__div--1 {
+    grid-area: main__div--1;
+  }
+
+  .main__div--2 {
+    grid-area: main__div--2;
+  }
+
+  .section__main--inf-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__main--inf-2 .a__inf {
+    align-self: center;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section__div-1 {
+    max-width: 100vw;
+    width: 68vw;
+    height: 55vh;
+  }
+
+  .section__div-3 {
+    top: 5.125rem;
+    left: 25.75rem;
+  }
+  .img__section {
+    justify-self: center;
+    max-width: 30%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .section__div-3 {
+    top: 5.125rem;
+    left: 36.75rem;
   }
 }
