@@ -11,6 +11,7 @@
   --bg-search: #00838c;
   --div-color: #fde9db;
   --div-color2: #fde9db;
+  --div-color3: #f5f7f8;
   --table-color: #d6d6d6;
   --step--2: clamp(1rem, calc(0.77rem + 0.63vw), 1.25rem);
   --step-0: clamp(1.35rem, calc(1rem + 0.72vw), 1.56rem);
