@@ -1,5 +1,7 @@
 .main {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .page__main {
@@ -13,8 +15,9 @@
     "main__div--1 "
     "main__div--2 ";
   justify-content: space-evenly;
-  gap: 20px 0;
+  gap: 1.25rem 0;
   position: relative;
+  margin-bottom: 2.5rem;
 }
 
 .section {
