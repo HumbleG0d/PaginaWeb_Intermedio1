@@ -1,0 +1,134 @@
+.footer {
+  margin-top: 20px;
+  background-color: var(--text-color2);
+  font-family: Helvetica, sans-serif;
+}
+
+.footer__div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 10px;
+}
+
+.footer__div-p {
+  color: #bac0c3;
+  font-size: var(--step-0);
+  font-weight: 700;
+}
+
+.footer__title {
+  text-decoration: none;
+  color: var(--text-color3);
+  font-size: var(--step-4);
+  font-weight: bold;
+}
+
+.footer__arrow {
+  position: relative;
+  top: 1.25rem;
+}
+
+.div__nav__footer {
+  margin-top: 1.875rem;
+  border-top: solid 0.0625rem #bac0c3;
+}
+
+.ul__footer,
+.nav__footer--div-ul {
+  list-style: none;
+}
+
+.footer__li {
+  font-size: var(--step--2);
+  font-weight: 700;
+}
+
+.footer--div-li {
+  font-size: var(--step--1);
+  color: #bac0c3;
+}
+
+.nav__footer--div {
+  display: none;
+}
+
+.nav__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 770px) {
+  .nav__footer--div {
+    display: flex;
+  }
+
+  .nav__footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "ul__footer-1 ul__footer-2"
+      "ul__footer-3 ul__footer-4"
+      "ul__footer-5 ul__footer-6";
+  }
+
+  .ul__footer-1 {
+    grid-area: ul__footer-1;
+  }
+
+  .ul__footer-2 {
+    grid-area: ul__footer-2;
+  }
+
+  .ul__footer-3 {
+    grid-area: ul__footer-3;
+  }
+
+  .ul__footer-4 {
+    grid-area: ul__footer-4;
+  }
+
+  .ul__footer-5 {
+    grid-area: ul__footer-5;
+  }
+
+  .ul__footer-6 {
+    grid-area: ul__footer-6;
+  }
+
+  .footer--div-li {
+    margin-top: 15px;
+  }
+
+  .ul__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__footer--div-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  /* .nav__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .nav__footer--div-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .footer--div-li {
+    margin-top: 15px;
+  } */
+}
